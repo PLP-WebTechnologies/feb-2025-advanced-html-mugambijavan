@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML5 Elements and Forms</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced HTML5 Elements and Forms</h1>
+    </header>
+    
+    <section>
+        <h2>Ordered List with Roman Numerals</h2>
+        <ol type="I">
+            <li>Item One</li>
+            <li>Item Two</li>
+            <li>Item Three</li>
+        </ol>
+    </section>
+    
+    <section>
+        <h2>External Image from Pexels</h2>
+        <img src="image.avif" alt="Beautiful Landscape" width="600">
+    </section>
+    
+    <section>
+        <h2>Contacts Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>123 Elm St.</td>
+                    <td>(123) 456-7890</td>
+                    <td>johndoe@example.com</td>
+                </tr>
+                <tr>
+                    <td>Jane Smith</td>
+                    <td>456 Oak St.</td>
+                    <td>(987) 654-3210</td>
+                    <td>janesmith@example.com</td>
+                </tr>
+                <tr>
+                    <td>Mike Johnson</td>
+                    <td>789 Pine St.</td>
+                    <td>(555) 123-4567</td>
+                    <td>mikejohnson@example.com</td>
+                </tr>
+                <tr>
+                    <td>Emily Davis</td>
+                    <td>321 Maple St.</td>
+                    <td>(444) 987-6543</td>
+                    <td>emilydavis@example.com</td>
+                </tr>
+                <tr>
+                    <td>David Brown</td>
+                    <td>654 Birch St.</td>
+                    <td>(333) 654-9876</td>
+                    <td>davidbrown@example.com</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section>
+        <h2>Registration Form</h2>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div>
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="us">United States</option>
+                    <option value="ca">Canada</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="au">Australia</option>
+                </select>
+            </div>
+            <fieldset>
+                <legend>Gender:</legend>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <input type="radio" id="other" name="gender" value="other" required>
+                    <label for="other">Other</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Hobbies:</legend>
+                <div>
+                    <input type="checkbox" id="reading" name="hobbies" value="reading">
+                    <label for="reading">Reading</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                    <label for="traveling">Traveling</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+                    <label for="cooking">Cooking</label>
+                </div>
+            </fieldset>
+            <div>
+                <button type="submit">Register</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
